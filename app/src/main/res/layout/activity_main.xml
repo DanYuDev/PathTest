@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coderlt.pathtest.MainActivity">
+
+    <com.example.coderlt.pathtest.view.PathCanvas1
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/path_canvas1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="path offset "
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/offset_button"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bezier_button"
+        android:text="Bezier"
+        android:textAllCaps="false"
+        android:layout_above="@id/offset_button"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bezier_ve_button"
+        android:text="bezier ev button"
+        android:textAllCaps="false"
+        android:layout_above="@id/bezier_button"/>
+</RelativeLayout>
